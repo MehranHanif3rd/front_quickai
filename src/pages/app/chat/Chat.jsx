@@ -53,7 +53,7 @@ const Chat = () => {
     if(value !=null){
       document.getElementById("txtSendMessage").value="";
      
-      axios.get("https://iqbalshahzad1996.pythonanywhere.com/chat/?question="+value).then(result=>{console.log(result.data)
+      axios.get("https://shahbazu.pythonanywhere.com/chat/?question="+value).then(result=>{console.log(result.data)
     
       dispatch(
         sendMessage({
