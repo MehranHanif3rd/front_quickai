@@ -54,7 +54,8 @@ const Chat = () => {
       document.getElementById("txtSendMessage").value="";
      
       axios.get("https://shahbazu.pythonanywhere.com/chat/?question="+value).then(result=>{console.log(result.data)
-    
+
+
       dispatch(
         sendMessage({
           content: result.data,
